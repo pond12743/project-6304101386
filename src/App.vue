@@ -1,10 +1,15 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="bg-image"
+      style="
+        background-image: url('https://www.launch-marketing.com/wp-content/uploads/2012/01/GettyImages-1127556731.jpg');
+        height: 100vh;
+      ">
+    <div class="navbar navbar-dark bg-success">
+      <a class="navbar-brand" href="/"> App </a>
     </div>
-    <router-view />
+    <div class="container pr-4">
+      <router-view />
+    </div>
   </div>
 </template>
 
